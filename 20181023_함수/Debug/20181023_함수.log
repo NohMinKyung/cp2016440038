@@ -1,4 +1,4 @@
-﻿Build started 2018-10-23 오후 5:20:47.
+﻿Build started 2018-10-30 오후 2:18:45.
      1>Project "C:\Users\yebbn\Desktop\C프로그래밍\2016440038_노민경\20181023_함수\20181023_함수.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "20181023_함수.cpp"
@@ -10,4 +10,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.78
+Time Elapsed 00:00:01.35
