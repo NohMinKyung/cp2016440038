@@ -109,6 +109,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20181120_문자열", "20181
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20181127_구조체", "20181127_구조체\20181127_구조체.vcxproj", "{7157B549-7FBD-4159-AC43-276A42D73DEB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20181204_구조체연습", "20181204_구조체연습\20181204_구조체연습.vcxproj", "{5E981299-5F18-4C1E-8B05-77E1D1A79DEA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20181204_연결리스트", "20181204_연결리스트\20181204_연결리스트.vcxproj", "{400CCBF2-A465-47C8-BEB4-78DFAB837893}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -331,6 +335,14 @@ Global
 		{7157B549-7FBD-4159-AC43-276A42D73DEB}.Debug|Win32.Build.0 = Debug|Win32
 		{7157B549-7FBD-4159-AC43-276A42D73DEB}.Release|Win32.ActiveCfg = Release|Win32
 		{7157B549-7FBD-4159-AC43-276A42D73DEB}.Release|Win32.Build.0 = Release|Win32
+		{5E981299-5F18-4C1E-8B05-77E1D1A79DEA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5E981299-5F18-4C1E-8B05-77E1D1A79DEA}.Debug|Win32.Build.0 = Debug|Win32
+		{5E981299-5F18-4C1E-8B05-77E1D1A79DEA}.Release|Win32.ActiveCfg = Release|Win32
+		{5E981299-5F18-4C1E-8B05-77E1D1A79DEA}.Release|Win32.Build.0 = Release|Win32
+		{400CCBF2-A465-47C8-BEB4-78DFAB837893}.Debug|Win32.ActiveCfg = Debug|Win32
+		{400CCBF2-A465-47C8-BEB4-78DFAB837893}.Debug|Win32.Build.0 = Debug|Win32
+		{400CCBF2-A465-47C8-BEB4-78DFAB837893}.Release|Win32.ActiveCfg = Release|Win32
+		{400CCBF2-A465-47C8-BEB4-78DFAB837893}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

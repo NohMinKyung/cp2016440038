@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+#include <string.h> //strcat()와 strcpy() 함수를 사용하기 위한 library
 
 void printArr(char* arr, int len) {//앞으로 배열을 함수에 전달할 경우 이 문법을 주로 사용한다.
 	for (int i = 0; i < len; i++) {
