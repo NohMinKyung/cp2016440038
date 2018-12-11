@@ -113,6 +113,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20181204_구조체연습", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20181204_연결리스트", "20181204_연결리스트\20181204_연결리스트.vcxproj", "{400CCBF2-A465-47C8-BEB4-78DFAB837893}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "20181211_연결리스트2", "20181211_연결리스트2\20181211_연결리스트2.vcxproj", "{EF03ACB6-6E10-407E-A950-BFF5E82AD4DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -343,6 +345,10 @@ Global
 		{400CCBF2-A465-47C8-BEB4-78DFAB837893}.Debug|Win32.Build.0 = Debug|Win32
 		{400CCBF2-A465-47C8-BEB4-78DFAB837893}.Release|Win32.ActiveCfg = Release|Win32
 		{400CCBF2-A465-47C8-BEB4-78DFAB837893}.Release|Win32.Build.0 = Release|Win32
+		{EF03ACB6-6E10-407E-A950-BFF5E82AD4DF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EF03ACB6-6E10-407E-A950-BFF5E82AD4DF}.Debug|Win32.Build.0 = Debug|Win32
+		{EF03ACB6-6E10-407E-A950-BFF5E82AD4DF}.Release|Win32.ActiveCfg = Release|Win32
+		{EF03ACB6-6E10-407E-A950-BFF5E82AD4DF}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

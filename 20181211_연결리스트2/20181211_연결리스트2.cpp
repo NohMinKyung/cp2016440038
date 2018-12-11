@@ -7,17 +7,23 @@ typedef struct node {
 	struct node* pNext;//자기 자신과 똑같은 구조체를 가진 포인터
 } Node;
 
+typedef struct linkedlist{
+	Node* pHead;
+	Node* pTail;
+	int nNode;
+}LinkedList;
+
 //함수: printLL() 화면에 연결리스트의 score값을 출력
 //입력: 연결리스트(연결리스트의 헤드노드 포인터)
 //출력: 없음
 //부수효과: 없음
-void printLL(Node* ptr){
+void printLL(LinkedList *pList){
+	Node* ptr = pList->pHead;
 	while(ptr != NULL){
 		printf("score = %d\n", ptr->score);
 		ptr = ptr->pNext;
 	}
 }
-
 //함수: createNode()
 //입력: 성적
 //출력: 노드하나를 동적할당으로 생성하여 포인터를 반환한다. 이 때 score=입력, pNext=NULL로 한다.
@@ -29,14 +35,19 @@ Node* createNode(int input){
 	ptr->pNext = NULL;
 	return ptr;
 }
-
 //함수: addHead()
-//입력: 연결리스트 새 노드
+//입력: 연결리스트 구조체 포인터(LinkedList*), 새 노드 포인터
 //출력: 없음
 //부수효과 : 연결리스트 헤드에 새 노드를 추가
-void addHead(Node** pHead, Node* pNewNode){
-	pNewNode->pNext = *pHead;
-	*pHead = pNewNode;
+void addHead(LinkedList* pList, Node* pNewNode){
+	if(pList->pHead == NULL)
+		pList->pTail = pNewNode;
+
+	pNewNode->pNext = pList->pHead;//#1
+	pList->pHead = pNewNode;//#2
+	(pList->nNode)++;//#3
+
+
 }
 //함수: averageLL()
 //입력: 연결리스트
@@ -54,7 +65,6 @@ double averageLL(Node* ptr){
 	average = ((double)sum)/count; //sum을 정수형->실수형으로 변환. 실수형이 하나라도 있으면 실수형으로 계산한다.
 	return average;
 }
-
 //함수: returnTail()
 //입력: 연결리스트(연결리스트의 헤드노드 포인터)
 //출력: 마지막 노드의 포인터
@@ -69,7 +79,6 @@ Node* returnTail(Node* ptr){
 		ptr = ptr-> pNext;
 	}
 }
-
 //함수: addTail()
 //입력: 연결리스트, 추가하려는 노드 포인터
 //출력: 없음
@@ -84,20 +93,12 @@ void addTail(Node* pHead, Node* pNode){
 }
 
 int main(){
-	//double test;
-	//test = 10/4;				//1. (10/4)->2를 반환	2. 정수형 2를 double형 2.0으로 변환
-	//printf("test = %f\n", test);
-	//test = 10.0/4;				//1. (10.0/4)->2.5를 반환	
-	//printf("test = %f\n", test);
-	//test = ((double)10) / 4;	//1. 정수형 10을 실수형(double) 10.0으로 변환
-	//printf("test = %f\n", test);
+	LinkedList* pList;
+	pList = (LinkedList*) malloc(sizeof(LinkedList));
+	pList->pHead = pList->pTail = NULL; pList->nNode = 0;
+	addHead (pList, createNode(10));
 
-	
 	Node* pHead=NULL, *ptr; //헤드노드의 포인터. NULL이면 연결리스트가 없다는 의미(로 약속하자)
-	//Node a, b;
-	//a.score = 10;	b.score = 20;
-	//a.pNext = &b;	b.pNext = NULL;
-	//pHead = &a;
 	pHead = createNode(11);
 	ptr = createNode(20);
 	addHead(&pHead, ptr);     
